@@ -8,7 +8,7 @@ const SousCompetenceSchema = new mongoose.Schema({
   },
   statut: {
     type: String,
-    enum: ["valide", "non valide"],
+    enum: ["validée", "non validée"],
     required: true
   }
 });
