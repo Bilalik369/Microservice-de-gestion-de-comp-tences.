@@ -2,6 +2,8 @@ import express from "express"
 import dotenv from "dotenv"
 import {connectDB} from "./lib/db.js"
 
+import competenceRoutes from './routes/competence.routes.js';
+
 
 dotenv.config()
 
@@ -10,6 +12,9 @@ dotenv.config()
 const app = express();
 
 const PORT = process.env.PORT 
+app.use(express.json());
+
+app.use('/api', competenceRoutes);
 
 
 
