@@ -10,6 +10,7 @@ const getStatutGlobal = (sousCompetences) => {
 
 
 
+
 export const getAllCompetences = async (req, res) => {
   try {
     const competences = await Competence.find();
